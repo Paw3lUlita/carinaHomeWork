@@ -20,7 +20,7 @@ public class SearchPhotoGetMethodTest implements IAbstractTest {
         searchPhotoGetMethod.addUrlParameter("client_id", API_KEY);
         searchPhotoGetMethod.expectResponseStatus(HttpResponseStatusType.BAD_REQUEST_400);
         searchPhotoGetMethod.callAPI();
-        searchPhotoGetMethod.validateResponseAgainstSchema("api/users/_get/errorRs.schema");
+        searchPhotoGetMethod.validateResponseAgainstSchema("api/searchPhoto/_get/errorRs.schema");
 
     }
 
@@ -31,6 +31,6 @@ public class SearchPhotoGetMethodTest implements IAbstractTest {
         searchPhotoGetMethod.addUrlParameter("client_id", API_KEY);
         searchPhotoGetMethod.addUrlParameter("query", "cat");
         searchPhotoGetMethod.callAPIExpectSuccess();
-        searchPhotoGetMethod.validateResponseAgainstSchema("api/users/_get/rs.schema");
+        searchPhotoGetMethod.validateResponseAgainstSchema("api/searchPhoto/_get/rs.schema");
     }
 }

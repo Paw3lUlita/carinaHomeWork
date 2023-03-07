@@ -8,12 +8,12 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.Configuration;
 
-@Endpoint(url = "${base_url}/search/photos/", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/users/_get/rs.json")
+@Endpoint(url = "${base_url}/collections/${id}", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "api/retrieveCollection/_get/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetUserMethods extends AbstractApiMethodV2 {
-
-    public GetUserMethods() {
+public class RetrieveCollectionGetMethod extends AbstractApiMethodV2 {
+    public RetrieveCollectionGetMethod(String param) {
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
+        replaceUrlPlaceholder("id", param);
     }
 }
