@@ -4,30 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="Search photo test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrieveCollectionGetMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchForCollectionGetMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrieveCollectionGetMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchForCollectionGetMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/retrieveCollection/_get/rs.schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/searchCollection/_get/errorRs.schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/searchCollection/_get/rs.schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/searchPhoto/_get/errorRs.schema" afterDir="false" />
+    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="search collection and retrieve collection test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrievePhotosForCollectionGetMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/retrievePhotosForCollectionGetMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/api/retirievePhotosForCollection/_get/errorRs.schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/api/retirievePhotosForCollection/_get/rs.schema" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/DeleteUserMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/GetUserMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/PostUserMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchPhotoGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchPhotoGetMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/APISampleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchPhotoGetMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchPhotoGetMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_delete/rq.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_delete/rs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_get/errorRs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/retrieveCollection/_get/errorRs.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_get/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/searchPhoto/_get/rs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_get/rs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/searchPhoto/_get/rs.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_post/rq.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_post/rs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/searchPhoto/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrieveCollectionGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrieveCollectionGetMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +49,14 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "TestNG",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": "",
+    "last_opened_file_path": "C:/Users/hp/IdeaProjects/carina-demo/src/test/resources/api/retirievePhotosForCollection/_get",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\IdeaProjects\carina-demo\src\test\resources\api\retirievePhotosForCollection\_get" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -80,7 +67,7 @@
       <recent name="org.example.carina.demo.api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RetrieveCollectionGetMethodTest.whenProperIdParamIsPassedEndpointShouldReturnProperResponseAndStatus">
+  <component name="RunManager" selected="TestNG.retrievePhotosForCollectionGetMethodTest">
     <configuration name="RetrieveCollectionGetMethodTest.whenProperIdParamIsPassedEndpointShouldReturnProperResponseAndStatus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="carina-demo" />
       <extension name="coverage">
@@ -134,24 +121,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPhotoGetMethodTest.whenQueryIsMissingEndpointShouldReturnErrorCodeAndErrorResponse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="carina-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.carina.demo.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.carina.demo.api" />
-      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.api.SearchPhotoGetMethodTest" />
-      <option name="METHOD_NAME" value="whenQueryIsMissingEndpointShouldReturnErrorCodeAndErrorResponse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SearchPhotoGetMethodTest.whenQueryParameterIsPassedEndpointShouldReturnProperResponseAndStatus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="carina-demo" />
       <extension name="coverage">
@@ -170,13 +139,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="retrievePhotosForCollectionGetMethodTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="carina-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.carina.demo.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.carina.demo.api" />
+      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.api.retrievePhotosForCollectionGetMethodTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.retrievePhotosForCollectionGetMethodTest" />
         <item itemvalue="TestNG.RetrieveCollectionGetMethodTest.whenProperIdParamIsPassedEndpointShouldReturnProperResponseAndStatus" />
         <item itemvalue="TestNG.RetrieveCollectionGetMethodTest.whenQueryIsWrongEndpointShouldReturnErrorCodeAndErrorResponse" />
         <item itemvalue="TestNG.SearchForCollectionGetMethodTest" />
         <item itemvalue="TestNG.SearchPhotoGetMethodTest.whenQueryParameterIsPassedEndpointShouldReturnProperResponseAndStatus" />
-        <item itemvalue="TestNG.SearchPhotoGetMethodTest.whenQueryIsMissingEndpointShouldReturnErrorCodeAndErrorResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677586240107</updated>
       <workItem from="1677586241824" duration="4025000" />
-      <workItem from="1678109557514" duration="10356000" />
+      <workItem from="1678109557514" duration="11414000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678173372589</created>
@@ -205,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678174924897</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="search collection and retrieve collection test">
+      <created>1678192329115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678192329115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +218,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Search photo test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search photo test" />
+    <MESSAGE value="search collection and retrieve collection test" />
+    <option name="LAST_COMMIT_MESSAGE" value="search collection and retrieve collection test" />
   </component>
 </project>
