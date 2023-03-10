@@ -14,7 +14,7 @@ public class SearchForCollectionMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenQueryIsMissingEndpointShouldReturnErrorCodeAndErrorResponse() {
+    public void searchForCollectionMissingQueryTest() {
         SearchForCollectionMethod searchForCollectionMethod = new SearchForCollectionMethod();
         searchForCollectionMethod.expectResponseStatus(HttpResponseStatusType.BAD_REQUEST_400);
         searchForCollectionMethod.callAPI();
@@ -24,7 +24,7 @@ public class SearchForCollectionMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenQueryParameterIsPassedEndpointShouldReturnProperResponseAndStatus() {
+    public void searchForCollectionSuccesTest() {
         SearchForCollectionMethod searchForCollectionMethod = new SearchForCollectionMethod();
         searchForCollectionMethod.addUrlParameter("query", "cat");
         searchForCollectionMethod.callAPIExpectSuccess();

@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="RetrievePhotosForCollection test">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrieveCollectionGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrieveCollectionMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrievePhotosForCollectionGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/RetrievePhotosForCollectionMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchForCollectionGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchForCollectionMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchPhotoGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/api/SearchPhotoMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrieveCollectionGetMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrieveCollectionMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchForCollectionGetMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchForCollectionMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchPhotoGetMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchPhotoMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/retrievePhotosForCollectionGetMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrievePhotosForCollectionMethodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/retrieveCollection/_get/errorRs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/retrieveCollection/_get/rs_error.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/retrievePhotosForCollection/_get/errorRs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/retrievePhotosForCollection/_get/rs_error.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/searchCollection/_get/errorRs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/searchCollection/_get/rs_error.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/searchCollection/_get/rs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/searchCollection/_get/rs.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/searchPhoto/_get/errorRs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/searchPhoto/_get/rs_error.schema" afterDir="false" />
+    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="requested changes">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrieveCollectionMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrieveCollectionMethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrievePhotosForCollectionMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/RetrievePhotosForCollectionMethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchForCollectionMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchForCollectionMethodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchPhotoMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/api/SearchPhotoMethodTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +175,7 @@
       <updated>1677586240107</updated>
       <workItem from="1677586241824" duration="4025000" />
       <workItem from="1678109557514" duration="12207000" />
-      <workItem from="1678433974026" duration="3785000" />
+      <workItem from="1678433974026" duration="4101000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678173372589</created>
@@ -217,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678261131268</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="requested changes">
+      <created>1678439340352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678439340352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +234,7 @@
     <MESSAGE value="Search photo test" />
     <MESSAGE value="search collection and retrieve collection test" />
     <MESSAGE value="RetrievePhotosForCollection test" />
-    <option name="LAST_COMMIT_MESSAGE" value="RetrievePhotosForCollection test" />
+    <MESSAGE value="requested changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="requested changes" />
   </component>
 </project>

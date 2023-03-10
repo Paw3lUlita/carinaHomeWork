@@ -14,7 +14,7 @@ public class RetrieveCollectionMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenIdParamIsWrongEndpointShouldReturnErrorCodeAndErrorResponse() {
+    public void retrieveCollectionWrongIdParamTest() {
         RetrieveCollectionMethod retrieveCollectionMethod = new RetrieveCollectionMethod("er");
         retrieveCollectionMethod.expectResponseStatus(HttpResponseStatusType.NOT_FOUND_404);
         retrieveCollectionMethod.callAPI();
@@ -24,7 +24,7 @@ public class RetrieveCollectionMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenProperIdParamIsPassedEndpointShouldReturnProperResponseAndStatus() {
+    public void retirieveCollectionSuccesTest() {
         RetrieveCollectionMethod retrieveCollectionMethod = new RetrieveCollectionMethod("1");
         retrieveCollectionMethod.callAPIExpectSuccess();
         retrieveCollectionMethod.validateResponseAgainstSchema("api/retrieveCollection/_get/rs.schema");

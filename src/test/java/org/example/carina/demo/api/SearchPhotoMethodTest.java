@@ -14,7 +14,7 @@ public class SearchPhotoMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenQueryIsMissingEndpointShouldReturnErrorCodeAndErrorResponse() {
+    public void searchPhotoMissingQueryParamTest() {
         SearchPhotoMethod searchPhotoMethod = new SearchPhotoMethod();
         searchPhotoMethod.expectResponseStatus(HttpResponseStatusType.BAD_REQUEST_400);
         searchPhotoMethod.callAPI();
@@ -24,7 +24,7 @@ public class SearchPhotoMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenQueryParameterIsPassedEndpointShouldReturnProperResponseAndStatus() {
+    public void searchPhotoSuccesTest() {
         SearchPhotoMethod searchPhotoMethod = new SearchPhotoMethod();
         searchPhotoMethod.addUrlParameter("query", "cat");
         searchPhotoMethod.callAPIExpectSuccess();

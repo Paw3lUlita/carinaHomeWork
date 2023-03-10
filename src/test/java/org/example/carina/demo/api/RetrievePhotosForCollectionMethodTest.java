@@ -14,7 +14,7 @@ public class RetrievePhotosForCollectionMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenIdParamIsWrongEndpointShouldReturnErrorCodeAndErrorResponse() {
+    public void retirievePhotosForCollectionWrongIdParamTest() {
         RetrievePhotosForCollectionMethod retrievePhotosForCollectionMethod = new RetrievePhotosForCollectionMethod("er");
         retrievePhotosForCollectionMethod.expectResponseStatus(HttpResponseStatusType.NOT_FOUND_404);
         retrievePhotosForCollectionMethod.callAPI();
@@ -24,7 +24,7 @@ public class RetrievePhotosForCollectionMethodTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "pawelUlita")
-    public void whenProperIdParamIsPassedEndpointShouldReturnProperResponseAndStatus() {
+    public void retirievePhotosForCollectionSuccesTest() {
         RetrievePhotosForCollectionMethod retrievePhotosForCollectionMethod = new RetrievePhotosForCollectionMethod("1");;
         retrievePhotosForCollectionMethod.callAPIExpectSuccess();
         retrievePhotosForCollectionMethod.validateResponseAgainstSchema("api/retrievePhotosForCollection/_get/rs.schema");
