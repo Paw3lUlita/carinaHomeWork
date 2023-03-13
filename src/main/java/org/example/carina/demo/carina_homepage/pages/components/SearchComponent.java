@@ -17,4 +17,12 @@ public class SearchComponent extends AbstractUIObject {
     public SearchComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
+
+    public ExtendedWebElement getInputField() {
+        return inputField;
+    }
+
+    public ExtendedWebElement getIcon() {
+        return icon;
+    }
 }

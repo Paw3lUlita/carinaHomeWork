@@ -18,13 +18,13 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//body/header")
     private Header header;
 
-    private ExtendedWebElement searchComponent;
 
     public HomePage(WebDriver driver) {
         super(driver);
         setPageAbsoluteURL(R.CONFIG.get(Configuration.Parameter.URL.getKey()));
     }
 
-
-
+    public Header getHeader() {
+        return header;
+    }
 }

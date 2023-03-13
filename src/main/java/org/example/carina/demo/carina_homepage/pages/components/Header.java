@@ -29,4 +29,20 @@ public class Header extends AbstractUIObject {
         zebrunnerLogo.click();
         return new HomePage(driver);
     }
+
+    public ExtendedWebElement getZebrunnerLogo() {
+        return zebrunnerLogo;
+    }
+
+    public ExtendedWebElement getCarinaTextOnHeader() {
+        return carinaTextOnHeader;
+    }
+
+    public SearchComponent getSearchComponent() {
+        return searchComponent;
+    }
+
+    public ExtendedWebElement getGithubLink() {
+        return githubLink;
+    }
 }
