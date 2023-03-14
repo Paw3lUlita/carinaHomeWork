@@ -5,6 +5,7 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import com.zebrunner.carina.utils.Configuration;
 import com.zebrunner.carina.utils.R;
 import org.example.carina.demo.carina_homepage.pages.components.Header;
+import org.example.carina.demo.carina_homepage.pages.components.NavigationBar;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;
@@ -18,6 +19,8 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//body/header")
     private Header header;
 
+    @FindBy(xpath = "//body/div[@class='md-container']/main/div/div[1]/div/div/nav")
+    private NavigationBar navigationBar;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -26,5 +29,9 @@ public class HomePage extends AbstractPage {
 
     public Header getHeader() {
         return header;
+    }
+
+    public NavigationBar getNavigationBar() {
+        return navigationBar;
     }
 }

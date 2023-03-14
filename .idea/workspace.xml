@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="HomeOage, Header and Search component">
+    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="Header Test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/SearchComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/SearchComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/HeaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/HeaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,25 +63,7 @@
       <recent name="org.example.carina.demo.carina_homepage.pages.components" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HeaderTest.stickyHeaderTest">
-    <configuration name="HeaderTest.carinaBrandTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="carina-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.carina.demo.carina_homepage.pages.components.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
-      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.HeaderTest" />
-      <option name="METHOD_NAME" value="carinaBrandTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.NavigationBarTest.navigationLinksTest">
     <configuration name="HeaderTest.githubLinkTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="carina-demo" />
       <extension name="coverage">
@@ -155,13 +136,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NavigationBarTest.navigationLinksTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="carina-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.carina.demo.carina_homepage.pages.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
+      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.NavigationBarTest" />
+      <option name="METHOD_NAME" value="navigationLinksTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NavigationBarTest.navigationLinksTest" />
+        <item itemvalue="TestNG.HeaderTest.zebrunnerLogoTest" />
         <item itemvalue="TestNG.HeaderTest.stickyHeaderTest" />
         <item itemvalue="TestNG.HeaderTest.githubLinkTest" />
         <item itemvalue="TestNG.HeaderTest.searchComponentTest" />
-        <item itemvalue="TestNG.HeaderTest.carinaBrandTest" />
-        <item itemvalue="TestNG.HeaderTest.zebrunnerLogoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678704418857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Header Test">
+      <created>1678707356085</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678707356085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +208,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HomeOage, Header and Search component" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomeOage, Header and Search component" />
+    <MESSAGE value="Header Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header Test" />
   </component>
 </project>
