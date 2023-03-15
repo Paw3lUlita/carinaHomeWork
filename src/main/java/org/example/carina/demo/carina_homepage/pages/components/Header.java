@@ -12,22 +12,26 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = "./nav/a")
     private ExtendedWebElement zebrunnerLogo;
 
-    @FindBy(xpath = "./nav/div[1]/div/span[1]")
+    @FindBy(xpath = "./nav/div[%s]/div/span[%s]")
     private ExtendedWebElement carinaTextOnHeader;
 
     @FindBy(xpath = "./nav/div[@class='md-search']/div/form")
     private SearchComponent searchComponent;
 
-    @FindBy(xpath = "./nav/div[3]/a")
+    @FindBy(xpath = "./nav/div[@class='md-header-nav__source']")
     private ExtendedWebElement githubLink;
 
     public Header(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
-    public HomePage gotoHomePage(){
+    public HomePage clickOnZebrunnerLogo(){
         zebrunnerLogo.click();
         return new HomePage(driver);
+    }
+
+    public boolean isCarinaTextPresentOnHeader () {
+        return carinaTextOnHeader.format(1,1).getText().equals("Carina");
     }
 
     public ExtendedWebElement getZebrunnerLogo() {

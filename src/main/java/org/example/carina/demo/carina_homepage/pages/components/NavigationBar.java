@@ -32,7 +32,7 @@ public class NavigationBar extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public boolean clickAllElementsAndCheckHighlightAndLink(List<ExtendedWebElement> elements) {
+    private boolean clickElementsAndCheckHighlightAndLink(List<ExtendedWebElement> elements) {
         boolean result = false;
         for (int i = 0; i < elements.size(); i++) {
             ExtendedWebElement element = elements.get(i);
@@ -50,23 +50,27 @@ public class NavigationBar extends AbstractUIObject {
         boolean result;
 
         nestedNavBars.get(0).click();
-        result = clickAllElementsAndCheckHighlightAndLink(automationBarElements);
+        result = clickElementsAndCheckHighlightAndLink(automationBarElements);
 
         nestedNavBars.get(1).click();
-        result = clickAllElementsAndCheckHighlightAndLink(advancedBarElements);
+        result = clickElementsAndCheckHighlightAndLink(advancedBarElements);
 
         nestedNavBars.get(2).click();
-        result = clickAllElementsAndCheckHighlightAndLink(integrationBarElements);
+        result = clickElementsAndCheckHighlightAndLink(integrationBarElements);
 
         return result;
 
     }
 
-    public boolean isHighlighted(ExtendedWebElement element) {
+    public boolean clickAllVisibleElementsAndCheckHighlightAndLink() {
+        return clickElementsAndCheckHighlightAndLink(navbarVisibleElements);
+    }
+
+    private boolean isHighlighted(ExtendedWebElement element) {
         return element.getAttribute("class").endsWith("--active");
     }
 
-    public boolean isLinkCorrect(ExtendedWebElement element) {
+    private boolean isLinkCorrect(ExtendedWebElement element) {
         String currentURL = driver.getCurrentUrl();
         if (element.getText().trim().toLowerCase().equals("overview")
                 && currentURL.equals("https://zebrunner.github.io/carina/")) {
