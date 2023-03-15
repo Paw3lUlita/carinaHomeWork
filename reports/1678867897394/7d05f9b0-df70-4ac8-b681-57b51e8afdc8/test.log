@@ -1,0 +1,30 @@
+[2023-03-15 08:11:40] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-15 08:11:40] [1] [INFO] TEST [carina-demo - clickEveryLinkAndCheckHighlightAndLinkTest] STARTED at [09:11:40 2023-03-15]
+[2023-03-15 08:11:40] [1] [INFO] Starting driver session...
+[2023-03-15 08:11:44] [1] [INFO] Driver session started.
+[2023-03-15 08:11:44] [1] [INFO] INFO: opening url 'https://zebrunner.github.io/carina/'
+[2023-03-15 08:11:46] [1] [INFO] PASS: element 'navbarVisibleElements0' is clicked.
+[2023-03-15 08:11:48] [1] [INFO] PASS: element 'navbarVisibleElements1' is clicked.
+[2023-03-15 08:11:50] [1] [INFO] PASS: element 'navbarVisibleElements2' is clicked.
+[2023-03-15 08:11:52] [1] [INFO] PASS: element 'navbarVisibleElements3' is clicked.
+[2023-03-15 08:11:53] [1] [INFO] PASS: element 'navbarVisibleElements4' is clicked.
+[2023-03-15 08:11:55] [1] [INFO] PASS: element 'navbarVisibleElements5' is clicked.
+[2023-03-15 08:11:57] [1] [INFO] PASS: element 'navbarVisibleElements6' is clicked.
+[2023-03-15 08:11:58] [1] [INFO] PASS: element 'nestedNavBars0' is clicked.
+[2023-03-15 08:11:59] [1] [INFO] PASS: element 'automationBarElements0' is clicked.
+[2023-03-15 08:12:00] [1] [INFO] PASS: element 'automationBarElements1' is clicked.
+[2023-03-15 08:12:02] [1] [INFO] PASS: element 'automationBarElements2' is clicked.
+[2023-03-15 08:12:03] [1] [INFO] PASS: element 'automationBarElements3' is clicked.
+[2023-03-15 08:12:04] [1] [INFO] PASS: element 'nestedNavBars1' is clicked.
+[2023-03-15 08:12:05] [1] [INFO] PASS: element 'advancedBarElements0' is clicked.
+[2023-03-15 08:12:07] [1] [INFO] PASS: element 'advancedBarElements1' is clicked.
+[2023-03-15 08:12:08] [1] [INFO] PASS: element 'advancedBarElements2' is clicked.
+[2023-03-15 08:12:10] [1] [INFO] PASS: element 'advancedBarElements3' is clicked.
+[2023-03-15 08:12:11] [1] [INFO] PASS: element 'advancedBarElements4' is clicked.
+[2023-03-15 08:12:13] [1] [INFO] PASS: element 'advancedBarElements5' is clicked.
+[2023-03-15 08:12:15] [1] [INFO] PASS: element 'advancedBarElements6' is clicked.
+[2023-03-15 08:12:17] [1] [INFO] PASS: element 'advancedBarElements7' is clicked.
+[2023-03-15 08:12:19] [1] [INFO] PASS: element 'advancedBarElements8' is clicked.
+[2023-03-15 08:12:20] [1] [INFO] PASS: element 'nestedNavBars2' is clicked.
+[2023-03-15 08:12:22] [1] [INFO] PASS: element 'integrationBarElements0' is clicked.
+[2023-03-15 08:12:23] [1] [INFO] TEST [carina-demo - clickEveryLinkAndCheckHighlightAndLinkTest] PASSED at [09:12:23 2023-03-15]
