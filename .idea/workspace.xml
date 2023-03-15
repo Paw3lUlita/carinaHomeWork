@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="Header Test">
+    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="NavigationBar &amp; NestedNavigationBar classes">
       <change afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NestedNavigationBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +64,8 @@
       <recent name="org.example.carina.demo.carina_homepage.pages.components" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NavigationBarTest.navigationLinksTest">
-    <configuration name="HeaderTest.githubLinkTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.NavigationBarTest">
+    <configuration name="NavigationBarTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="carina-demo" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +74,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
-      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.HeaderTest" />
-      <option name="METHOD_NAME" value="githubLinkTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.NavigationBarTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationBarTest.clickEveryLinkTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="carina-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.carina.demo.carina_homepage.pages.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
+      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.NavigationBarTest" />
+      <option name="METHOD_NAME" value="clickEveryLinkTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -82,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeaderTest.searchComponentTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationBarTest.navigationIsVisibleTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="carina-demo" />
       <extension name="coverage">
         <pattern>
@@ -91,44 +109,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
-      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.HeaderTest" />
-      <option name="METHOD_NAME" value="searchComponentTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeaderTest.stickyHeaderTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="carina-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.carina.demo.carina_homepage.pages.components.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
-      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.HeaderTest" />
-      <option name="METHOD_NAME" value="stickyHeaderTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeaderTest.zebrunnerLogoTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="carina-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.carina.demo.carina_homepage.pages.components.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
-      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.HeaderTest" />
-      <option name="METHOD_NAME" value="zebrunnerLogoTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.NavigationBarTest" />
+      <option name="METHOD_NAME" value="navigationIsVisibleTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,13 +136,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NavigationBarTest.someElementsAreHiddenTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="carina-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.carina.demo.carina_homepage.pages.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.carina.demo.carina_homepage.pages.components" />
+      <option name="MAIN_CLASS_NAME" value="org.example.carina.demo.carina_homepage.pages.components.NavigationBarTest" />
+      <option name="METHOD_NAME" value="someElementsAreHiddenTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NavigationBarTest" />
+        <item itemvalue="TestNG.NavigationBarTest.clickEveryLinkTest" />
+        <item itemvalue="TestNG.NavigationBarTest.someElementsAreHiddenTest" />
+        <item itemvalue="TestNG.NavigationBarTest.navigationIsVisibleTest" />
         <item itemvalue="TestNG.NavigationBarTest.navigationLinksTest" />
-        <item itemvalue="TestNG.HeaderTest.zebrunnerLogoTest" />
-        <item itemvalue="TestNG.HeaderTest.stickyHeaderTest" />
-        <item itemvalue="TestNG.HeaderTest.githubLinkTest" />
-        <item itemvalue="TestNG.HeaderTest.searchComponentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678707356085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="NavigationBar &amp; NestedNavigationBar classes">
+      <created>1678788553636</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678788553636</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +216,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HomeOage, Header and Search component" />
     <MESSAGE value="Header Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Header Test" />
+    <MESSAGE value="NavigationBar &amp; NestedNavigationBar classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="NavigationBar &amp; NestedNavigationBar classes" />
   </component>
 </project>
