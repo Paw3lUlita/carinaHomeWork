@@ -13,7 +13,7 @@ public class RetrievePhotosForCollectionMethodTest implements IAbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Test()
-    @MethodOwner(owner = "pawelUlita")
+    @MethodOwner(owner = "pulita")
     public void retirievePhotosForCollectionWrongIdParamTest() {
         RetrievePhotosForCollectionMethod retrievePhotosForCollectionMethod = new RetrievePhotosForCollectionMethod("er");
         retrievePhotosForCollectionMethod.expectResponseStatus(HttpResponseStatusType.NOT_FOUND_404);
@@ -23,7 +23,7 @@ public class RetrievePhotosForCollectionMethodTest implements IAbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "pawelUlita")
+    @MethodOwner(owner = "pulita")
     public void retirievePhotosForCollectionSuccesTest() {
         RetrievePhotosForCollectionMethod retrievePhotosForCollectionMethod = new RetrievePhotosForCollectionMethod("1");;
         retrievePhotosForCollectionMethod.callAPIExpectSuccess();

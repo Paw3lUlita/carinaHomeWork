@@ -13,7 +13,7 @@ public class SearchForCollectionMethodTest implements IAbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Test()
-    @MethodOwner(owner = "pawelUlita")
+    @MethodOwner(owner = "pulita")
     public void searchForCollectionMissingQueryTest() {
         SearchForCollectionMethod searchForCollectionMethod = new SearchForCollectionMethod();
         searchForCollectionMethod.expectResponseStatus(HttpResponseStatusType.BAD_REQUEST_400);
@@ -23,7 +23,7 @@ public class SearchForCollectionMethodTest implements IAbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "pawelUlita")
+    @MethodOwner(owner = "pulita")
     public void searchForCollectionSuccesTest() {
         SearchForCollectionMethod searchForCollectionMethod = new SearchForCollectionMethod();
         searchForCollectionMethod.addUrlParameter("query", "cat");
