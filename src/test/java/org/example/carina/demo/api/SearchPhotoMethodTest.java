@@ -13,7 +13,7 @@ public class SearchPhotoMethodTest implements IAbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Test()
-    @MethodOwner(owner = "pulita")
+    @MethodOwner(owner = "pawelUlita")
     public void searchPhotoMissingQueryParamTest() {
         SearchPhotoMethod searchPhotoMethod = new SearchPhotoMethod();
         searchPhotoMethod.expectResponseStatus(HttpResponseStatusType.BAD_REQUEST_400);
@@ -23,7 +23,7 @@ public class SearchPhotoMethodTest implements IAbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "pulita")
+    @MethodOwner(owner = "pawelUlita")
     public void searchPhotoSuccesTest() {
         SearchPhotoMethod searchPhotoMethod = new SearchPhotoMethod();
         searchPhotoMethod.addUrlParameter("query", "cat");

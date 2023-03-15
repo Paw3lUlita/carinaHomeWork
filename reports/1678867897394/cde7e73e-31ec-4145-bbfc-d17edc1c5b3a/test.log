@@ -1,7 +1,0 @@
-[2023-03-15 08:12:26] [1] [WARN] Reporting disabled: using no op test run registrar
-[2023-03-15 08:12:26] [1] [INFO] TEST [carina-demo - someElementsAreHiddenTest] STARTED at [09:12:26 2023-03-15]
-[2023-03-15 08:12:26] [1] [INFO] Starting driver session...
-[2023-03-15 08:12:27] [1] [INFO] Driver session started.
-[2023-03-15 08:12:28] [1] [INFO] INFO: opening url 'https://zebrunner.github.io/carina/'
-[2023-03-15 08:12:59] [1] [INFO] PASS: element 'nestedNavBars0' is clicked.
-[2023-03-15 08:13:00] [1] [INFO] TEST [carina-demo - someElementsAreHiddenTest] PASSED at [09:13:00 2023-03-15]

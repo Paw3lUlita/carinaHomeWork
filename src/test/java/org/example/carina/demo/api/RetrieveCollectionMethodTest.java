@@ -13,7 +13,7 @@ public class RetrieveCollectionMethodTest implements IAbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Test()
-    @MethodOwner(owner = "pulita")
+    @MethodOwner(owner = "pawelUlita")
     public void retrieveCollectionWrongIdParamTest() {
         RetrieveCollectionMethod retrieveCollectionMethod = new RetrieveCollectionMethod("er");
         retrieveCollectionMethod.expectResponseStatus(HttpResponseStatusType.NOT_FOUND_404);
@@ -23,7 +23,7 @@ public class RetrieveCollectionMethodTest implements IAbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "pulita")
+    @MethodOwner(owner = "pawelUlita")
     public void retirieveCollectionSuccesTest() {
         RetrieveCollectionMethod retrieveCollectionMethod = new RetrieveCollectionMethod("1");
         retrieveCollectionMethod.callAPIExpectSuccess();
