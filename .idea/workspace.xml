@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="NavigationBar &amp; NestedNavigationBar classes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/carina/demo/carina_homepage/pages/components/NestedNavigationBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
+    <list default="true" id="7d466d2f-7887-49f4-a61b-a962f1eb91bc" name="Changes" comment="Navigation bar test">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/HeaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/HeaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/carina/demo/carina_homepage/pages/components/NavigationBarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678788553636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Navigation bar test">
+      <created>1678868066526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678868066526</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +221,7 @@
     <MESSAGE value="HomeOage, Header and Search component" />
     <MESSAGE value="Header Test" />
     <MESSAGE value="NavigationBar &amp; NestedNavigationBar classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="NavigationBar &amp; NestedNavigationBar classes" />
+    <MESSAGE value="Navigation bar test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation bar test" />
   </component>
 </project>
