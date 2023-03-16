@@ -79,27 +79,23 @@ public class NavigationBar extends AbstractUIObject {
         return currentURL.contains(element.getText().trim().toLowerCase().replaceAll(" ", "_"));
     }
 
-    public ExtendedWebElement getNavbarTitle() {
-        return navbarTitle;
+    public String getNavbarTitleText() {
+        return navbarTitle.getText();
     }
 
-    public List<ExtendedWebElement> getNavbarVisibleElements() {
-        return navbarVisibleElements;
+    public boolean areNavbarLinksPresent() {
+        return navbarVisibleElements.size() > 0 && nestedNavBars.size() > 0;
     }
 
-    public List<ExtendedWebElement> getNestedNavBars() {
-        return nestedNavBars;
+    public boolean isFirstLinkActiveWhenEnteringThePage() {
+        return navbarVisibleElements.get(0).getAttribute("class").endsWith("--active");
     }
 
-    public List<ExtendedWebElement> getAutomationBarElements() {
-        return automationBarElements;
+    public void clickOnAutomationNavBar() {
+        nestedNavBars.get(0).click();
     }
 
-    public List<ExtendedWebElement> getAdvancedBarElements() {
-        return advancedBarElements;
-    }
-
-    public List<ExtendedWebElement> getIntegrationBarElements() {
-        return integrationBarElements;
+    public boolean isAutomationNavbarFirstElementPresent() {
+        return automationBarElements.get(0).isElementPresent();
     }
 }

@@ -18,11 +18,11 @@ public class SearchComponent extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public ExtendedWebElement getInputField() {
-        return inputField;
+    public boolean isInputFieldPresent() {
+        return inputField.isElementPresent();
     }
 
-    public ExtendedWebElement getIcon() {
-        return icon;
+    public boolean isIconPresent() {
+        return icon.isElementPresent();
     }
 }

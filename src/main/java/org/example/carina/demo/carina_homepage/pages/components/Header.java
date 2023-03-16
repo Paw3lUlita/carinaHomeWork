@@ -12,10 +12,10 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = "./nav/a")
     private ExtendedWebElement zebrunnerLogo;
 
-    @FindBy(xpath = "./nav/div[%s]/div/span[%s]")
+    @FindBy(xpath = ".//span")
     private ExtendedWebElement carinaTextOnHeader;
 
-    @FindBy(xpath = "./nav/div[@class='md-search']/div/form")
+    @FindBy(xpath = ".//form")
     private SearchComponent searchComponent;
 
     @FindBy(xpath = "./nav/div[@class='md-header-nav__source']")
@@ -25,28 +25,24 @@ public class Header extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public HomePage clickOnZebrunnerLogo(){
+    public HomePage clickOnZebrunnerLogo() {
         zebrunnerLogo.click();
         return new HomePage(driver);
     }
 
-    public boolean isCarinaTextPresentOnHeader () {
-        return carinaTextOnHeader.format(1,1).getText().equals("Carina");
+    public boolean isZebrunnerLogoPresent() {
+        return zebrunnerLogo.isElementPresent();
     }
 
-    public ExtendedWebElement getZebrunnerLogo() {
-        return zebrunnerLogo;
+    public void clickOnGithubLink() {
+        githubLink.click();
     }
 
-    public ExtendedWebElement getCarinaTextOnHeader() {
-        return carinaTextOnHeader;
+    public boolean isCarinaTextPresentOnHeader() {
+        return carinaTextOnHeader.format(1, 1).getText().equals("Carina");
     }
 
     public SearchComponent getSearchComponent() {
         return searchComponent;
-    }
-
-    public ExtendedWebElement getGithubLink() {
-        return githubLink;
     }
 }

@@ -16,10 +16,10 @@ import java.lang.invoke.MethodHandles;
 public class HomePage extends AbstractPage {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
-    @FindBy(xpath = "//body/header")
+    @FindBy(xpath = "//header[@class='md-header']")
     private Header header;
 
-    @FindBy(xpath = "//body/div[@class='md-container']/main/div/div[1]/div/div/nav")
+    @FindBy(xpath = "//nav[@aria-label='Navigation']")
     private NavigationBar navigationBar;
 
     public HomePage(WebDriver driver) {

@@ -19,12 +19,11 @@ public class NavigationBarTest implements IAbstractTest {
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         NavigationBar navigationBar = homePage.getNavigationBar();
 
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(navigationBar.getNavbarTitle().getText(), "Carina", "Carina heading is not first element of navigation menu");
-        softAssert.assertTrue(navigationBar.getNavbarVisibleElements().size() > 0, "List elements are not present");
-        softAssert.assertTrue(navigationBar.getNestedNavBars().size() > 0, "Nested navBars are not present");
-        softAssert.assertTrue(navigationBar.getNavbarVisibleElements().get(0).getAttribute("class").endsWith("--active"));
-        softAssert.assertAll();
+        SoftAssert sa = new SoftAssert();
+        sa.assertEquals(navigationBar.getNavbarTitleText(), "Carina", "Carina heading is not first element of navigation menu");
+        sa.assertTrue(navigationBar.areNavbarLinksPresent(), "List elements are not present");
+        sa.assertTrue(navigationBar.isFirstLinkActiveWhenEnteringThePage(), "First link should be active");
+        sa.assertAll();
     }
 
     @Test
@@ -35,11 +34,11 @@ public class NavigationBarTest implements IAbstractTest {
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         NavigationBar navigationBar = homePage.getNavigationBar();
 
-        assertFalse(navigationBar.getAutomationBarElements().get(0).isElementPresent(), "There are no hidden elements");
+        assertFalse(navigationBar.isAutomationNavbarFirstElementPresent(), "There are no hidden elements");
 
-        navigationBar.getNestedNavBars().get(0).click();
+        navigationBar.clickOnAutomationNavBar();
 
-        assertTrue(navigationBar.getAutomationBarElements().get(0).isElementPresent(), "There are no hidden elements");
+        assertTrue(navigationBar.isAutomationNavbarFirstElementPresent(), "There are no hidden elements");
     }
 
     @Test
@@ -50,10 +49,9 @@ public class NavigationBarTest implements IAbstractTest {
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         NavigationBar navigationBar = homePage.getNavigationBar();
 
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(navigationBar.clickAllVisibleElementsAndCheckHighlightAndLink(), "Element is not highlighted or link is invalid");
-        softAssert.assertTrue(navigationBar.clickAllNestedAndCheckHighlightAndLink(), "Element is not highlighted or link is invalid");
-        softAssert.assertAll();
+        SoftAssert sa = new SoftAssert();
+        sa.assertTrue(navigationBar.clickAllVisibleElementsAndCheckHighlightAndLink(), "Element is not highlighted or link is invalid");
+        sa.assertTrue(navigationBar.clickAllNestedAndCheckHighlightAndLink(), "Element is not highlighted or link is invalid");
+        sa.assertAll();
     }
-
 }

@@ -3,6 +3,7 @@ package org.example.carina.demo.carina_homepage.pages.components;
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import org.example.carina.demo.carina_homepage.pages.HomePage;
+import org.example.carina.demo.utils.JSActionUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,9 +20,9 @@ public class HeaderTest implements IAbstractTest {
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         Header header = homePage.getHeader();
-        Assert.assertTrue(header.getZebrunnerLogo().isElementPresent(), "The header is missing");
-        HomePage homePage2 = header.clickOnZebrunnerLogo();
-        assertTrue(homePage2.isPageOpened(), "Home page is not opened");
+        Assert.assertTrue(header.isZebrunnerLogoPresent(), "The header is missing");
+        homePage = header.clickOnZebrunnerLogo();
+        assertTrue(homePage.isPageOpened(), "Home page is not opened");
     }
 
     @Test
@@ -41,11 +42,11 @@ public class HeaderTest implements IAbstractTest {
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         SearchComponent searchComponent = homePage.getHeader().getSearchComponent();
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(searchComponent.isUIObjectPresent(), "Search Component is not present");
-        softAssert.assertTrue(searchComponent.getIcon().isElementPresent(), "Icon is not present");
-        softAssert.assertTrue(searchComponent.getInputField().isElementPresent(), "Input is not present");
-        softAssert.assertAll();
+        SoftAssert sa = new SoftAssert();
+        sa.assertTrue(searchComponent.isUIObjectPresent(), "Search Component is not present");
+        sa.assertTrue(searchComponent.isIconPresent(), "Icon is not present");
+        sa.assertTrue(searchComponent.isInputFieldPresent(), "Input is not present");
+        sa.assertAll();
     }
 
     @Test
@@ -55,7 +56,7 @@ public class HeaderTest implements IAbstractTest {
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         Header header = homePage.getHeader();
-        header.getGithubLink().click();
+        header.clickOnGithubLink();
         assertEquals(getDriver().getCurrentUrl(), "https://github.com/zebrunner/carina/");
     }
 
@@ -66,8 +67,7 @@ public class HeaderTest implements IAbstractTest {
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened");
         Header header = homePage.getHeader();
-        JavascriptExecutor js = (JavascriptExecutor) getDriver();
-        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+        JSActionUtils.scrollDownThePage(getDriver());
         assertTrue(header.isUIObjectPresent(), "Header is not sticky");
     }
 }
