@@ -2,21 +2,20 @@ package org.example.carina.demo.api;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.api.annotation.Endpoint;
-import com.qaprosoft.carina.core.foundation.api.annotation.RequestTemplatePath;
 import com.qaprosoft.carina.core.foundation.api.annotation.ResponseTemplatePath;
 import com.qaprosoft.carina.core.foundation.api.annotation.SuccessfulHttpStatus;
 import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.Configuration;
 
-@Endpoint(url = "${base_url}/users", methodType = HttpMethodType.POST)
-@RequestTemplatePath(path = "api/users/_post/rq.json")
-@ResponseTemplatePath(path = "api/users/_post/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.CREATED_201)
-public class PostUserMethod extends AbstractApiMethodV2 {
+@Endpoint(url = "${base_url}/collections/${id}/", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "api/retrieveCollection/_get/rs.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
+public class RetrieveCollectionMethod extends AbstractApiMethodV2 {
 
-    public PostUserMethod() {
-        super("api/users/_post/rq.json", "api/users/_post/rs.json", "api/users/user.properties");
+    public RetrieveCollectionMethod(String collectionId) {
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
+        replaceUrlPlaceholder("id", collectionId);
+        addUrlParameter("client_id", Configuration.getEnvArg("api_key") );
     }
 }
