@@ -1,11 +1,10 @@
 package org.example.carina.demo.carina_homepage.pages;
 
-import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractPage;
 import com.zebrunner.carina.utils.Configuration;
 import com.zebrunner.carina.utils.R;
-import org.example.carina.demo.carina_homepage.pages.components.Header;
-import org.example.carina.demo.carina_homepage.pages.components.NavigationBar;
+import org.example.carina.demo.carina_homepage.components.Header;
+import org.example.carina.demo.carina_homepage.components.NavigationBar;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;

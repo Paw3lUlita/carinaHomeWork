@@ -1,4 +1,4 @@
-package org.example.carina.demo.carina_homepage.pages.components;
+package org.example.carina.demo.carina_homepage.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;

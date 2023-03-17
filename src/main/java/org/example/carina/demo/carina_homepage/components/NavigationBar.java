@@ -1,4 +1,4 @@
-package org.example.carina.demo.carina_homepage.pages.components;
+package org.example.carina.demo.carina_homepage.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
@@ -16,16 +16,16 @@ public class NavigationBar extends AbstractUIObject {
     @FindBy(xpath = "./ul/li[contains(@class,'md-nav__item') and not(contains(@class,'--nested'))]/a")
     private List<ExtendedWebElement> navbarVisibleElements;
 
-    @FindBy(xpath = "./ul/li[@class='md-nav__item md-nav__item--nested'] | ./ul/li[@class='md-nav__item md-nav__item--active md-nav__item--nested']")
+    @FindBy(xpath = ".//li[contains(@class, 'md-nav__item--nested')]")
     private List<ExtendedWebElement> nestedNavBars;
 
-    @FindBy(xpath = "./ul/li[contains(@class,'--nested')][1]/nav/ul/li/a")
+    @FindBy(xpath = "./ul/li[contains(@class,'--nested')][1]/nav//a")
     private List<ExtendedWebElement> automationBarElements;
 
-    @FindBy(xpath = "./ul/li[contains(@class,'--nested')][2]/nav/ul/li/a")
+    @FindBy(xpath = "./ul/li[contains(@class,'--nested')][2]/nav//a")
     private List<ExtendedWebElement> advancedBarElements;
 
-    @FindBy(xpath = "./ul/li[contains(@class,'--nested')][3]/nav/ul/li/a")
+    @FindBy(xpath = "./ul/li[contains(@class,'--nested')][3]/nav//a")
     private List<ExtendedWebElement> integrationBarElements;
 
     public NavigationBar(WebDriver driver, SearchContext searchContext) {

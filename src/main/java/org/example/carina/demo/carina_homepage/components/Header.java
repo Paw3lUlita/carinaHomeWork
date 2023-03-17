@@ -1,4 +1,4 @@
-package org.example.carina.demo.carina_homepage.pages.components;
+package org.example.carina.demo.carina_homepage.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
@@ -39,7 +39,7 @@ public class Header extends AbstractUIObject {
     }
 
     public boolean isCarinaTextPresentOnHeader() {
-        return carinaTextOnHeader.format(1, 1).getText().equals("Carina");
+        return carinaTextOnHeader.getText().equals("Carina");
     }
 
     public SearchComponent getSearchComponent() {

@@ -1,9 +1,8 @@
-package org.example.carina.demo.carina_homepage.pages.components;
+package org.example.carina.demo.carina_homepage.components;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import org.example.carina.demo.carina_homepage.pages.HomePage;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
